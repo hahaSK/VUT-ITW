@@ -1,0 +1,142 @@
+html {
+    margin: 0; 
+    padding: 0;
+    width: 100%;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Montserrat";
+    font-size: 25px;
+    margin: 0;
+}
+
+section {
+    min-height: 100vh; 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+.align-items-center {align-items: center!important;}
+
+@media (max-width: 768px)
+{
+    .content{font-size: 3em;}
+}
+
+ul.nav-list {    
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    list-style-type: none;
+}
+.nav-list li {
+    float: left;
+    display: block;
+    padding: 20px;
+}
+
+a:active {background-color: coral;}
+a:hover {background-color: grey;}
+a.active {background-color: coral;}
+
+#about, #family, #education, #interests, #awards {padding-top: 80px;}
+
+/********* Header *********/
+header {background-color: #5d6770; padding: 20px; text-align: center;}
+header img {border-radius: 50%; display: block; margin: auto;}
+header h1 {color: azure;}
+
+header ul {
+    height: 108px;
+}
+header ul img {border-radius: unset; margin: auto; width: 100px; height: 100px;}
+header section {min-height: calc(100vh - 110px);}
+
+/********* Navigation *********/
+nav {
+    overflow: hidden; 
+    background-color: #333333; 
+    align-items: center; 
+    display: flex; 
+    flex-wrap: nowrap;
+    justify-content: center;
+    height: 80px;
+    z-index: 100;
+}
+
+nav a {
+    float: left; 
+    display: block; 
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+}
+
+.content {
+    padding: 16px;
+    min-height: 100vh;
+    max-width: 90%;
+    width: 100%;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.sticky + .content {
+    padding-top: 60px;
+}
+
+/********* family *********/
+#family a {text-decoration: none; color: black;}
+#family a:hover {background-color: inherit; color: coral;}
+
+.family-members-section {height: 600px;}
+
+.family-member {display: block; float: left; text-align: center;}
+.family-member img {height: 250px; width: 200px; border-radius: 50%;}
+.family-member p.above-img-text {height: 80px;}
+.family-member h3 {height: 40px;}
+.spouse {width: 33%;}
+
+img.icon {height: 40px; width: 40px; position: relative; top: 0.4em;}
+
+.parent {width: 50%; height: 600px;}
+.child {width: 20%;}
+
+/********* Education *********/
+.education-content {height: 200px;}
+.education-content .time {
+    display: block; 
+    float: right;
+    position: relative;
+    top: 1.8em;
+    }
+.education-content .school {display: block; float: left;}
+.education-content h3 {margin-bottom: 2px;}
+.education-content p {margin-top: 0px;}
+
+/********* Interests *********/
+
+#interests ul {list-style-type: none;}
+#interests li {padding: 20px; font-weight: bold;}
+
+/********* Awards *********/
+
+#awards li {
+	margin: 0;
+	padding: 36px 0 36px 64px;
+	list-style: none;
+	background-image: url("images/usa_flag.png");
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-size: 40px;
+}
+
+ /********* Footer *********/
+ footer {text-align: center;}
